@@ -1,0 +1,21 @@
+{
+	"remotePath": "./domains/festiwalczacki.pl/public_html/dlazuzi",
+	"host": "k14.unixstorm.org",
+	"username": "jedrka",
+	"password": "95819c2e1c",
+	"port": 21,
+	"secure": false,
+	"protocol": "ftp",
+	"uploadOnSave": true,
+	"passive": false,
+	"debug": false,
+	"privateKeyPath": null,
+	"passphrase": null,
+	"agent": null,
+	"allow": [],
+	"ignore": ["\\.vscode", "\\.git", "\\.DS_Store"],
+	"generatedFiles": {
+		"extensionsToInclude": [""],
+		"path": ""
+	}
+}
