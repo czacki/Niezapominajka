@@ -14,9 +14,9 @@ html {
 }
 
 body {
-	font-family: Didot;
 	overflow: hidden;
-	background-color: #121212;
+	background-color: #0d0d0d;
+	margin-bottom: 100vh;
 }
 .loading {
 	position: absolute;
@@ -53,40 +53,56 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: #0d0d0d;
+	margin-bottom: 100vh;
 }
 
 .festiwal {
 	width: 80%;
-	height: 40vh;
+	height: 10vh;
+	transition: all 1s ease-in-out;
 }
 .festiwal-cover {
 	position: absolute;
 	z-index: 10;
 }
-.festiwal:hover .right {
+
+/* .festiwal:hover .right {
 	transform: translate(600px);
 }
+
 .festiwal:hover .left {
 	transform: translate(-600px);
+} */
+
+.festiwal-cover div {
+	height: 100%;
+	width: 100%;
+	background-color: #008a0a;
+	object-fit: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .festiwal-cover img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+	height: 100px;
+	/* top: 50%;
+	left: 50%; */
+	/* margin-left: 50%; */
+	/* margin-right: auto; */
 }
 
 .festiwal-cover .left {
 	top: 0;
 	left: 0;
-	clip-path: polygon(0 0, 50% 0, 55% 100%, 0 100%);
+	clip-path: polygon(0 0, 45% 0, 55% 100%, 0 100%);
 	transition: all 1s ease-in-out;
 	position: absolute;
 }
 .festiwal-cover .right {
 	top: 0;
 	left: 0;
-	clip-path: polygon(50% 0, 100% 0, 100% 100%, 55% 100%);
+	clip-path: polygon(45% 0, 100% 0, 100% 100%, 55% 100%);
 	transition: all 1s ease-in-out;
 	position: absolute;
 }
@@ -119,6 +135,11 @@ body {
 	width: 100%;
 	transition: all 2s ease-in-out;
 }
+
+.slide-hide {
+	display: none;
+}
+
 .slide-content {
 	height: 100%;
 	width: 100%;
@@ -159,7 +180,9 @@ section {
 
 .slide-up img,
 .slide-bottom img {
-	width: 400px;
+	width: 350px;
+	height: 300px;
+	object-fit: cover;
 }
 
 .slide-left {
@@ -170,10 +193,4 @@ section {
 .slide-right {
 	transform: translate(3000px);
 	opacity: 0;
-}
-
-.paper {
-	overflow-y: scroll;
-	height: 100vh;
-	background-color: black;
 }
